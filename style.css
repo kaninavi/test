@@ -1,0 +1,234 @@
+/* ---------------- Global Styles ---------------- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background: #f3f2f2;
+  color: #333;
+}
+
+/* ---------------- Top Bar ---------------- */
+.top-bar {
+  background: #f9f9f9;
+  padding: 8px 0;
+  text-align: center;
+  font-size: 14px;
+  color: #444;
+}
+
+.top-bar a {
+  color: #1b7b33;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+/* ---------------- Header ---------------- */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 60px;
+  border-bottom: 1px solid #eee;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  width: 40px;
+  margin-right: 10px;
+}
+
+.logo h1 {
+  color: #1b7b33;
+  font-size: 22px;
+  margin-right: 5px;
+}
+
+.logo span {
+  font-size: 12px;
+  color: gray;
+}
+
+/* ---------------- Navigation ---------------- */
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+nav a:hover {
+  color: #7b3e1b;
+}
+
+/* ---------------- Header Icons ---------------- */
+.header-icons a {
+  margin-left: 15px;
+  text-decoration: none;
+  color: #333;
+  font-size: 18px;
+}
+
+/* ---------------- Hero Section ---------------- */
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 60px 80px;
+  background: #fafafa;
+}
+
+.hero-text {
+  max-width: 500px;
+}
+
+.discount {
+  background: #a0da86;
+  color: #f5eeee;
+  padding: 4px 8px;
+  font-size: 14px;
+  border-radius: 5px;
+}
+
+.hero-text h2 {
+  font-size: 38px;
+  color: #1b7b33;
+  margin: 20px 0 10px;
+}
+
+.hero-text p {
+  font-size: 16px;
+  color: #555;
+  margin-bottom: 25px;
+  line-height: 1.6;
+}
+
+/* ---------------- Buttons ---------------- */
+.buttons a {
+  text-decoration: none;
+  padding: 12px 24px;
+  border-radius: 5px;
+  font-weight: 600;
+  margin-right: 10px;
+}
+
+.btn-primary {
+  background: #0eeb57;
+  color: #fff;
+}
+
+.btn-secondary {
+  background: #eb930f;
+  color: #fff;
+}
+
+.btn-primary:hover {
+  background: #e53e3e;
+}
+
+.btn-secondary:hover {
+  background: #156326;
+}
+
+/* ---------------- Hero Image ---------------- */
+.hero-image img {
+  width: 420px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+/* ---------------- Responsive Design ---------------- */
+
+/* Tablets and small laptops */
+@media (max-width: 992px) {
+  header {
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 40px;
+  }
+
+  nav ul {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 10px;
+  }
+
+  .hero {
+    flex-direction: column;
+    text-align: center;
+    padding: 50px 30px;
+  }
+
+  .hero-image img {
+    width: 80%;
+    margin-top: 20px;
+  }
+}
+
+/* Mobile screens */
+@media (max-width: 768px) {
+  header {
+    padding: 15px 20px;
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .hero-text h2 {
+    font-size: 28px;
+  }
+
+  .hero-text p {
+    font-size: 15px;
+  }
+
+  .buttons a {
+    display: block;
+    width: 70%;
+    margin: 10px auto;
+  }
+
+  .hero-image img {
+    width: 100%;
+  }
+}
+
+/* Extra small devices */
+@media (max-width: 480px) {
+  .top-bar p {
+    font-size: 12px;
+  }
+
+  .logo h1 {
+    font-size: 18px;
+  }
+
+  .hero-text h2 {
+    font-size: 24px;
+  }
+
+  .hero-text p {
+    font-size: 14px;
+  }
+
+  .buttons a {
+    font-size: 13px;
+    padding: 10px;
+  }
+}
